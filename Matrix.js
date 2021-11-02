@@ -22,7 +22,7 @@ class Matrix {
     }
 
     //Put the value randomly.
-    put_randomize(min, max) {
+    randomize(min, max) {
         if (typeof (min) !== "number" || typeof (max) !== "number") {
             console.error('Please write the parameter in this put_random function...');
             return;
@@ -35,7 +35,7 @@ class Matrix {
     }
 
     //Put the value randomly. It's set to integer
-    put_randomize_integer(min, max) {
+    randomize_integer(min, max) {
         for (let row = 0; row < this.number_ofRows; row++) {
             for (let column = 0; column < this.number_ofColumns; column++) {
                 this.matrix[row][column] =
